@@ -54,7 +54,7 @@ if(!class_exists('ShortcodeExtended'))
   {
     // Here we list the native blocks we are likely to include ACF shortcodes in.
     // This list probably needs to be expanded, but suits my immediate requirements.
-    $validBlocks = ['core/shortcode', 'core/paragraph', 'core/list'];
+    $validBlocks = ['core/shortcode', 'core/paragraph', 'core/list', 'core/button'];
 
     // override the native render_callback function to ensure ACF shortcodes run as expected.
     if(in_array($name, $validBlocks))
